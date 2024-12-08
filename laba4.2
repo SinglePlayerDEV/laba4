@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+void Numbers(int N)
+{
+    if (N <= 0) {
+        return;
+    }
+        cout << N << endl;
+        Numbers(N - 1);
+}
+int main()
+{
+    int n;
+    cout << "enter number n" << endl;
+    cin >> n;
+    cout << " nuber N of 1" << endl;
+    Numbers(n);
+  
+    return 0;
+}
